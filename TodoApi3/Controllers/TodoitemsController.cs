@@ -9,7 +9,7 @@ using TodoApi3.Models;
 
 namespace TodoApi3.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/TodoItems")]
     [ApiController]
     public class TodoitemsController : ControllerBase
     {
@@ -79,8 +79,10 @@ namespace TodoApi3.Controllers
         {
             _context.TodoItems.Add(todoitem);
             await _context.SaveChangesAsync();
+            
+            //return CreatedAtAction("GetTodoitem", new { id = todoitem.Id }, todoitem);
+            return CreatedAtAction(nameof(GetTodoitem), new { id = todoitem.Id }, todoitem);
 
-            return CreatedAtAction("GetTodoitem", new { id = todoitem.Id }, todoitem);
         }
 
         // DELETE: api/Todoitems/5

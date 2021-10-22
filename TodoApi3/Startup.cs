@@ -31,7 +31,9 @@ namespace TodoApi3
 
             services.AddControllers();
             services.AddDbContext<TodoContext>(opt =>
-                                               opt.UseInMemoryDatabase("TodoList"));
+                                               opt.UseInMemoryDatabase("TodoList")); 
+            services.AddDbContext<PizzaContext>(opt =>
+                                                opt.UseInMemoryDatabase("PizzaList"));
 
             //services.AddSwaggerGen(c =>
             //{

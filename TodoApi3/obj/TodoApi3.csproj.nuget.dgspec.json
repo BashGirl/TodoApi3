@@ -1,27 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\m.passeri\\source\\repos\\TodoApi3\\TodoApi3\\TodoApi3.csproj": {}
+    "/Users/melissa/Development/TodoApi3/TodoApi3/TodoApi3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\m.passeri\\source\\repos\\TodoApi3\\TodoApi3\\TodoApi3.csproj": {
+    "/Users/melissa/Development/TodoApi3/TodoApi3/TodoApi3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\m.passeri\\source\\repos\\TodoApi3\\TodoApi3\\TodoApi3.csproj",
+        "projectUniqueName": "/Users/melissa/Development/TodoApi3/TodoApi3/TodoApi3.csproj",
         "projectName": "TodoApi3",
-        "projectPath": "C:\\Users\\m.passeri\\source\\repos\\TodoApi3\\TodoApi3\\TodoApi3.csproj",
-        "packagesPath": "C:\\Users\\m.passeri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\m.passeri\\source\\repos\\TodoApi3\\TodoApi3\\obj\\",
+        "projectPath": "/Users/melissa/Development/TodoApi3/TodoApi3/TodoApi3.csproj",
+        "packagesPath": "/Users/melissa/.nuget/packages/",
+        "outputPath": "/Users/melissa/Development/TodoApi3/TodoApi3/obj/",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\m.passeri\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/melissa/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,6 +41,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[5.0.11, )"
@@ -81,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
         }
       }
     }
